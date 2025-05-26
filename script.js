@@ -9,6 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const name = document.getElementById('name').value;
         const dob = document.getElementById('dob').value;
         const pob = document.getElementById('pob').value;
+        const latVal = document.getElementById('latitude').value;
+        const lonVal = document.getElementById('longitude').value;
 
         // Get time of birth values
         let hour = document.getElementById('tobHour').value;
@@ -23,6 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const tob = `${hour}:${minute} ${amPm}`;
 
         // Display pending message
-        chartContainer.innerHTML = `Chart generation for ${name} with DOB ${dob}, TOB ${tob}, POB ${pob} is pending.`;
+        chartContainer.innerHTML = `Chart generation for ${name} with DOB ${dob}, TOB ${tob}, POB ${pob}, Latitude: ${latVal}, Longitude: ${lonVal} is pending.`;
     });
 });

@@ -1,0 +1,12 @@
+# Basic requirements for the KP Astrology Chart Generator Backend
+flask
+vedicastro
+
+# IMPORTANT: The flatlib library (a dependency for vedicastro)
+# needs to be installed from a specific git branch AFTER
+# the initial pip install -r requirements.txt.
+# Run the following command separately:
+# pip install git+https://github.com/diliprk/flatlib.git@sidereal#egg=flatlib
+#
+# pyswisseph is another critical dependency, usually pulled in by vedicastro or flatlib.
+# It may require system-level libraries for the Swiss Ephemeris.
