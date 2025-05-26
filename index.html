@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KP Astrology Chart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>KP Astrology Chart Generator</h1>
+    <form id="kpForm">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+        <div>
+            <label for="tob">Time of Birth:</label>
+            <input type="time" id="tob" name="tob" required>
+        </div>
+        <div>
+            <label for="pob">Place of Birth:</label>
+            <input type="text" id="pob" name="pob" required>
+        </div>
+        <button type="submit">Generate Chart</button>
+    </form>
+    <div id="chartContainer">
+        <!-- Astrology chart will be displayed here -->
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
